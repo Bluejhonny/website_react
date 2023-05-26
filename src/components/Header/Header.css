@@ -1,0 +1,99 @@
+header {
+    min-height: 70vh;
+    /* background: url("../../assets/pexels-eva-bronzini-7641148.jpg"); */
+    background-color: black;
+    background-size: cover;
+    background-position: centre;
+    /* margin-top: 200px; */
+}
+
+header .wrapper {
+    position: relative;
+    height: 50vh;
+}
+
+header .header-img img {
+    width: 40px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 250px;
+    left: 100px;
+    top: 220px;
+    border-radius: 10px;
+}
+
+header .cta {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 250px;
+    left: 600px;
+    top: 220px;
+    background: rgba(217, 65, 33, 0.26);
+    border-radius: 10px;
+    padding: 40px 40px 40px 40px;
+}
+
+header .cta .course-name {
+    font-weight: 800;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+}
+
+header .cta .course-name::after {
+    content: "";
+    position: absolute;
+    width: 128px;
+    height: 4px;
+    color: black;
+    left: 0;
+    bottom: 10px;
+}
+
+header .cta h1 {
+    font-family: 'Itim';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 120%;
+    color: #F5F5F5;
+}
+
+header .cta .register-btn {
+    background: #D94121;
+    border-radius: 90px;
+    color: var(--white-color);
+    padding:10px 32px;
+    font-size: 16px;
+}
+
+
+/*  Tablet Version*/
+
+@media (max-width: 1040px) {
+    header .cta {
+        width: 350px;
+    }
+
+}
+
+
+/* Smartphone */
+
+@media (max-width: 720px) {
+    header .cta {
+        width: unset;
+        right: 32 px;
+        left: 32px;
+    }
+
+    header .cta h1 {
+        font-size: 32px;
+    }
+
+}
