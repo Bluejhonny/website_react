@@ -1,0 +1,51 @@
+#about .content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24;
+}
+
+
+#about div {
+    display: flex;
+}
+
+#about div>div {
+    flex: 1;
+    margin-right: 20px;
+    /* Espaciado entre la imagen y el párrafo */
+}
+
+#about div>div:last-child {
+    margin-right: 0;
+    /* Elimina el margen derecho del último elemento */
+}
+
+#about div>div img {
+    width: 20%;
+    /* height: 345px; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 400px;
+    left: 220px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+}
+
+#about div>div p {
+    width: 550px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 430px;
+    left: 700px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+}

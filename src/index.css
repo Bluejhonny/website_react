@@ -36,6 +36,27 @@ h1 {
   line-height: 1.1;
 }
 
+h2 {
+  position: absolute;
+  width: 100px;
+  height: 48px;
+  left: 220px;
+  top: 250px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  
+
+  color: #5083B8;
+  white-space: nowrap
+
+}
+
+
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;

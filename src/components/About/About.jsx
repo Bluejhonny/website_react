@@ -1,15 +1,34 @@
+import { useEffect, useState } from "react";
+import { fotoperfil } from '../../assets'
+import './About.css'
+import myTextFile from "./myfile.txt";
+
 const About = () => {
+
+  const [text, setText] = useState("");
+
+  useEffect(() => {
+    fetch(myTextFile)
+      .then(response => response.text())
+      .then(text => setText(text));
+  }, []);
+
   return (
-    <div>
-      <p>
-        I'm Jhonny! I'm a developer.
-        <br />
-        🌋 I'm currently improving my knowledge of the MERN Stack (NodeJS, ExpressJS, MongoDB, React). I also have knowledge in data analysis with python (Numpy, Pandas, GeoPandas and Keras) and in C++.
-        <br />
-        👍 I’m looking to collaborate with teams with large or small projects where I can apply my knowledge and expertise.
-      </p>
-    </div>
+    <section id='about'>
+      <div>
+        <h2>About me</h2>
+        <div className='content-container'>
+          <div >
+            <img src={fotoperfil} alt="" />
+          </div>
+          <div >
+          <p dangerouslySetInnerHTML={{ __html: text }}></p>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
+
 
 export default About;

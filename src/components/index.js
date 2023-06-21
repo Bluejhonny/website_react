@@ -1,7 +1,10 @@
 import Header from './Header/Header'
-import Dashboard from './Dashboard/Dashboard'
+import Portfolio from './Portfolio/Portfolio'
 import About from './About/About'
+import Experience from './Experience/Experience'
+import Books from './Books/Books'
+import Contact from './Contact/Contact'
 
 
 
-export {Dashboard, Header, About}
+export {Header, Portfolio, About, Experience, Books, Contact}
